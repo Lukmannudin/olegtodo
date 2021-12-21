@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:olegtodo/commons/calendar/calendarbanner.dart';
 
 void main() {
   runApp(const App());
@@ -33,106 +34,9 @@ class App extends StatelessWidget {
                   ),
                   Padding(
                     padding:
-                        const EdgeInsets.symmetric(vertical: 0, horizontal: 28),
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 24),
-                      child: Container(
-                        padding: const EdgeInsets.all(8),
-                        width: double.maxFinite,
-                        decoration: const BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.all(Radius.circular(14)),
-                            boxShadow: [
-                              BoxShadow(
-                                  color: Color.fromRGBO(149, 165, 166, 0.75),
-                                  blurRadius: 4.0)
-                            ]),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Container(
-                              width: 40,
-                              height: 40,
-                              padding: const EdgeInsets.all(12),
-                              decoration: const BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  color: Color.fromRGBO(181, 183, 201, 1)),
-                              child: const Text(
-                                "1",
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold),
-                                textAlign: TextAlign.center,
-                              ),
-                            ),
-                            Container(
-                              width: 40,
-                              height: 40,
-                              padding: const EdgeInsets.all(12),
-                              decoration: const BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  color: Color.fromRGBO(181, 183, 201, 1)),
-                              child: const Text(
-                                "2",
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold),
-                                textAlign: TextAlign.center,
-                              ),
-                            ),
-                            Container(
-                              width: 50,
-                              height: 50,
-                              padding: const EdgeInsets.all(12),
-                              decoration: const BoxDecoration(
-                                  shape: BoxShape.rectangle,
-                                  color: Color.fromRGBO(67, 63, 122, 1)),
-                              child: const Align(
-                                alignment: Alignment.center,
-                                child: Text(
-                                  "3",
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ),
-                            ),
-                            Container(
-                              width: 40,
-                              height: 40,
-                              padding: const EdgeInsets.all(12),
-                              decoration: const BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  color: Color.fromRGBO(181, 183, 201, 1)),
-                              child: const Text(
-                                "4",
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold),
-                                textAlign: TextAlign.center,
-                              ),
-                            ),
-                            Container(
-                              width: 40,
-                              height: 40,
-                              padding: const EdgeInsets.all(12),
-                              decoration: const BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  color: Color.fromRGBO(181, 183, 201, 1)),
-                              child: const Text(
-                                "5",
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold),
-                                textAlign: TextAlign.center,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  )
+                        EdgeInsets.symmetric(vertical: 24, horizontal: 28),
+                    child: CalendarBanner(),
+                  ),
                 ],
               ),
             ),
